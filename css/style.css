@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*Basic reset*/        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Defining the decoration, typography, and the layout for IronFit website*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header style */
+header {
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    border-radius: 4px;
+}
+/*Customizing the navigation*/
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #ff6b00;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('./assets/original-17252e2612e48d8fd0fe722d54509aba.webp');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 6rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.hero-buttons {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff6b00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 10px;
+    transition: all 0.3s;
+    border: 2px solid #ff6b00;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #ff6b00;
+}
+
+.btn-light {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-light:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Main content */
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Video section */
+video {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        display: block;
+        margin: 10px auto;
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.3rem 0;
+    }
+}
+
+/*Customizing the map*/
+.map{
+    display: flex;
+    justify-content: center;
+}
+
+/* Submit button */
+.contact-form input[type="submit"] {
+    padding: 10px 15px;           
+    background: #007bff;          
+    color: white;                 
+    border: none;                 
+    border-radius: 6px;           
+    font-size: 15px;              
+    cursor: pointer;             
+    transition: 0.3s ease
+
+}
+
+/*Psuedo selectors */
+.nav-links a:hover {
+    background-color: blueviolet;
+    border-radius: 5px;
+    transform: scale(1,1); 
+}
+
+
+.nav-links a:active {
+    background-color: aqua;
+    border-radius: 5px;
+    transform: scale(1,1);
+}
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-xl);
+}
+
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+}
+
+
+/* Contact Section */
+.contact {
+  background: var(--gradient-secondary);
+  color: var(--white);
+}
+
+.contact .section-title h2 {
+  color: var(--white);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+}
+
+.contact-info h3,
+.contact-form h3 {
+  color: var(--white);
+  margin-bottom: var(--space-lg);
+}
+
+.contact-details {
+  margin-bottom: var(--space-xl);
+}
+.contact-map {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.form-group {
+  margin-bottom: var(--space-lg);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-weight: var(--semi-bold);
+  color: var(--white);
+}
+.form-control {
+  width: 100%;
+  padding: var(--space-md);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  transition: var(--transition-normal);
+}
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+textarea.form-control {
+  min-height: 150px;
+  resize: vertical;
+}
+/*Customizing the map*/
+.map{
+    display: flex;
+    justify-content: center;
+
+/* Container holding all staff members */
+.staff-container {
+    display: flex;                
+    flex-wrap: wrap;              
+    justify-content: center;      
+    gap: 20px;                
+    padding: 20px;               
+    background-color: #f9f9f9
+}
+
+/* Each staff member card */
+.staff-member {
+    background: #fff;                      
+    border-radius: 12px;                   
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    padding: 15px;                        
+    width: 200px;                          
+    text-align: center;              
+    transition: transform 0.3s ease, 
+                box-shadow 0.3s ease;      
+}
+
+/* Hover effect on staff cards */
+.staff-member:hover {
+    transform: translateY(10px);           
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Staff images */
+.staff-img {
+    width: 100%;                
+    height: 200px;              
+     object-fit: cover;    
+    border-radius: 10px;        
+    margin-bottom: 10px;    
+}
+
+/* Staff member text (name + role) */
+.staff-member p {
+    font-size: 16px;            
+    font-weight: bold;          
+    color: #333;                
+    line-height: 1.4;           
+}
+
+/*Default layout for the video*/
+.vid{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Layout on smaller devices*/
+@media(max-width: 768px){
+    .vid{
+        width: 100%;
+        max-height: 15.625rem;
+    }
+}
+/*Default layout for the video*/
+.responsive-text{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/*Layout of paragraph on smaller devices*/
+@media(max-width: 768px){}
+.responsive-text{
+        font-size: 0.875rem;
+        line-height: 1.4;
+        text-align: justify;
+    }
+}
+
+/* Membership Section */
+        .membership {
+            padding: var(--space-xxl) 0;
+            background-color: var(--light);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-sm);
+        }
+        
+         .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--light-gray);
+            max-width: 600px;
+            margin: 0 auto var(--space-xl);
+        }
+        
