@@ -3,44 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery-Iron Fit Gym</title>
-     <link rel="stylesheet" href="../css/style.css"> 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Gallery - Iron Fit Gym</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gallery.css">
 </head>
 <body>
     <header>
         <img src="../assets/istockphoto-1499989647-612x612.jpg" alt="logo" width="200" height="150">
-         <nav>
-             <ul class="nav links">
-             <li><a href="../index.html">Home</a></li>
-             <li><a href="about.html">About Us</a></li>
-             <li><a href="gallery.html">Gallery</a></li>
-             <li> <a href="membership.html">Membership</a></li>
-             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="blog.html">Blog</a></li>
-           </ul>
-         </nav>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
     </header>
-     
-    <main>
-        <!--Gallery-->
-        <h1>Gym Gallery</h1>
-        <section>
-            <img src="../assets/istockphoto-1849342295-612x612.jpg" alt="Weightlifting Area" width="300">
-            <img src="../assets/istockphoto-1497018234-612x612.jpg" alt="main" width="300">
-            <img src="../assets/photo-1534438327276-14e5300c3a48.jpeg" alt="main" width="300">
-            <img src="../assets/unnamed.png" alt="main" width="300">
-            <img src="../assets/download (1).jpeg" alt="main" width="300">
-            <img src="../assets/action-athlete-barbell-841130-scaled.jpg" alt="main" width="300">
-            <img src="../assets/gym-benefits.webp" alt="main" width="300">
-            <img src="../assets/download (2).jpeg" alt="main" width="300">
-            <img src="../assets/download (3).jpeg" alt="main" width="300">
-            <img src="../assets/images (1).jpeg" alt="main" width="300">
-            <img src="../assets/images.jpeg" alt="main" width="300">
-        </section>
-    </main>
     
-      <!-- Footer -->
+    <main>
+        <h1>Gym Gallery</h1>
+        
+        <div class="gallery-intro">
+            <p>Explore our state-of-the-art facilities, premium equipment, and motivating training environment. At IronFit Gym, we provide everything you need to achieve your fitness goals.</p>
+        </div>
+        
+        <!-- Filter Buttons -->
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+           
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Card 1 -->
+            <div class="gallery-card" data-category="equipment">
+                <img src="../assets/istockphoto-1849342295-612x612.jpg" alt="Weightlifting Area" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Weightlifting Area</h3>
+                    <p class="card-description">Our premium weightlifting section with Olympic bars, bumper plates, and dedicated platforms for serious strength training.</p>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="gallery-card" data-category="equipment">
+                <img src="../assets/istockphoto-1497018234-612x612.jpg" alt="Cardio Equipment" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Cardio Zone</h3>
+                    <p class="card-description">State-of-the-art treadmills, ellipticals, and stationary bikes with individual entertainment systems.</p>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="gallery-card" data-category="training">
+                <img src="../assets/photo-1534438327276-14e5300c3a48.jpeg" alt="Personal Training" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Personal Training</h3>
+                    <p class="card-description">One-on-one sessions with our certified personal trainers for customized workout programs.</p>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="gallery-card" data-category="facilities">
+                <img src="../assets/unnamed.png" alt="Locker Rooms" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Locker Rooms</h3>
+                    <p class="card-description">Spacious, clean locker rooms with showers, sauna, and complimentary toiletries.</p>
+                </div>
+            </div>
+            
+            <!-- Card 5 -->
+            <div class="gallery-card" data-category="training">
+                <img src="../assets/download (1).jpeg" alt="Group Classes" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Group Classes</h3>
+                    <p class="card-description">High-energy group fitness classes including HIIT, yoga, spin, and functional training.</p>
+                </div>
+            </div>
+            
+            <!-- Card 6 -->
+            <div class="gallery-card" data-category="equipment">
+                <img src="../assets/action-athlete-barbell-841130-scaled.jpg" alt="Functional Training" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Functional Training</h3>
+                    <p class="card-description">Dedicated area with kettlebells, battle ropes, TRX systems, and turf for functional movements.</p>
+                </div>
+            </div>
+            
+            <!-- Card 7 -->
+            <div class="gallery-card" data-category="facilities">
+                <img src="../assets/gym-benefits.webp" alt="Reception Area" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Reception Area</h3>
+                    <p class="card-description">Welcoming reception with friendly staff ready to assist you with all your fitness needs.</p>
+                </div>
+            </div>
+            
+            <!-- Card 8 -->
+            <div class="gallery-card" data-category="training">
+                <img src="../assets/download (2).jpeg" alt="Yoga Studio" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Yoga Studio</h3>
+                    <p class="card-description">Peaceful yoga studio with natural light for mindfulness and flexibility training.</p>
+                </div>
+            </div>
+            
+            <!-- Card 9 -->
+            <div class="gallery-card" data-category="equipment">
+                <img src="../assets/download (3).jpeg" alt="Strength Machines" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Strength Machines</h3>
+                    <p class="card-description">Comprehensive range of strength training machines targeting all major muscle groups.</p>
+                </div>
+            </div>
+            
+            <!-- Card 10 -->
+            <div class="gallery-card" data-category="facilities">
+                <img src="../assets/images (1).jpeg" alt="Supplement Bar" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Supplement Bar</h3>
+                    <p class="card-description">Post-workout nutrition bar offering protein shakes, energy drinks, and healthy snacks.</p>
+                </div>
+            </div>
+            
+            <!-- Card 11 -->
+            <div class="gallery-card" data-category="training">
+                <img src="../assets/images.jpeg" alt="CrossFit Area" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">CrossFit Area</h3>
+                    <p class="card-description">Dedicated CrossFit box with rigs, pull-up bars, and specialized equipment for functional fitness.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -55,7 +161,8 @@
                 <p>&copy; 2024 IronFit Gym. All rights reserved.</p>
             </div>
         </div>
-    </footer>  
-    
+    </footer>
+
+    <script src="../js/gallery.js"></script>
 </body>
 </html>
