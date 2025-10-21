@@ -22,58 +22,178 @@
          </nav>
     </header>
        <main>
-        <!--Contact-->
-        <h1> Contact Us: </h1>
-        <table>
-            <tr>
-                <td width="100">Telephone Number:</td>
-                <td width="200">(011)-699-0098</td>
-            </tr>
-            <tr>
-                <td width="100">Physical Address:</td>
-                <td width="200">Veldespaat Street Bendor Park,<br/>Polokwane.<br>0699</td>
-            </tr>
-            <tr>
-                <td width="100">Email Address:</td>
-                <td width="200"><a href="mailto:info@ironfitgym.co.za" >Email Us...</a></td>
-            </tr>
-        </table>
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58370.966558276465!2d29.46030693364235!3d-23.883043179483487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d9f2f4fb518b%3A0xc00ab6e3fe8524d5!2sVirgin%20Active%20Gym%20Thornhill!5e0!3m2!1sen!2sza!4v1756142264186!5m2!1sen!2sza" 
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy"
-             referrerpolicy="no-referrer-when-downgrade"></iframe>"
+        <!-- Contact Header -->
+        <section class="contact-header">
+            <h1>Get In Touch</h1>
+            <p>We're here to help you on your fitness journey. Reach out to us with any questions or to schedule your free trial.</p>
         </section>
-        <section>
-            <!--Enquiries-->
-            <h1> Enquiries </h1>
-            <form action="" method="post">
-                <table>
-                    <tr>
-                        <td width="150">Name:</td>
-                        <td><input type="text" name="name" placeholder="Enter your name" required ></td>
-                    </tr>
-                    <tr>
-                        <td width="150">Email:</td>
-                        <td><input type="text" email="email" placeholder="Enter your email" required ></td>
-                    </tr>
-                    <tr>
-                        <td width="150">Message:</td>
-                        <td>
-                            <textarea cols="25" rows="5" required></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="150"></td>
-                        <td><input type="submit" name="button" value="submit" ></td>
-                    </tr>
-                </table>
-            </form>
+
+        <div class="contact-grid">
+            <!-- Contact Information -->
+            <section class="contact-info">
+                <h2 style="color: #222; margin-bottom: 2rem; text-align: center;">Contact Information</h2>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Phone Number</h3>
+                        <p>(011) 699-0098</p>
+                        <p>Available during business hours</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                         <h3>Physical Address</h3>
+                        <p>Veldespaat Street Bendor Park,<br>Polokwane, 0699</p>
+                        <p>Free parking available</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email Address</h3>
+                        <p><a href="mailto:info@ironfitgym.co.za">info@ironfitgym.co.za</a></p>
+                     <p>We respond within 24 hours</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Operating Hours</h3>
+                        <ul class="hours-list">
+                            <li>
+                                <span class="day">Monday - Friday</span>
+                                <span class="time">5:00 AM - 10:00 PM</span>
+                            </li>
+                            <li>
+                                <span class="day">Saturday</span>
+                                <span class="time">6:00 AM - 8:00 PM</span>
+                            </li>
+                            <li>
+                                <span class="day">Sunday</span>
+                                <span class="time">7:00 AM - 6:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+       
+              <!-- Contact Form -->
+            <section class="contact-form-section">
+                <h2 style="color: #222; margin-bottom: 2rem; text-align: center;">Send Us a Message</h2>
+                
+                <form id="contactForm" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                        <span class="error" id="nameError"></span>
+                    </div>
+
+                     <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                        <span class="error" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number">
+                    </div>
+
+                      <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" class="form-control">
+                            <option value="">Select a subject</option>
+                            <option value="membership">Membership Inquiry</option>
+                            <option value="training">Personal Training</option>
+                            <option value="classes">Group Classes</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                     <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Tell us how we can help you..." required></textarea>
+                        <span class="error" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i> Thank you for your message! We'll get back to you within 24 hours.
+                </div>
+            </section>
+            </div>
+
+            <!-- Map Section -->
+        <section class="map-section">
+            <h2 style="color: #222; margin-bottom: 1.5rem; text-align: center;">Find Us</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58370.966558276465!2d29.46030693364235!3d-23
+                    .883043179483487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d9f2f4fb518b%3A0xc00ab6e3fe8524d5!2sVirgin%20Active%20Gym%20Thornhill!5e0!3m2!
+                    1sen!2sza!4v1756142264186!5m2!1sen!2sza" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+             </section>
+
+        <!-- Social Contact -->
+        <section class="social-contact">
+            <h2>Connect With Us</h2>
+            <div class="social-links-large">
+                <a href="#" class="social-link">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-link">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <span>Instagram</span>
+                    </a>
+                <a href="#" class="social-link">
+                    <div class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="social-link">
+                    <div class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <span>YouTube</span>
+                </a>
+                <a href="#" class="social-link">
+                    <div class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                         </div>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
         </section>
+    
        </main>
+
 
        
 
