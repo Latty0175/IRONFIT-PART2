@@ -6,7 +6,136 @@ Changelog
 
     Added navigation bar and footer
 
-    
+   Home Page (index.html)
+
+Major Improvements:
+
+ Complete redesign with modern hero section
+
+ Fixed header with scroll effect
+
+ Full-screen background image with parallax effect
+
+ Organized content sections with clear visual hierarchy
+
+Added features section with icon cards
+
+ Implemented statistics counter animation
+
+Enhanced video section with custom controls
+
+
+New Sections Added:
+
+Hero Section: Full-screen with gradient overlay and call-to-action buttons
+
+Features Section: Three-column layout highlighting gym benefits
+
+Stats Section: Animated counters showing gym achievements
+
+Video Section: Enhanced video player with hover effects
+
+
+Membership Page (membership.html)
+
+Major Improvements:
+
+ Fixed broken HTML structure - removed empty divs and corrected nesting
+
+ Created professional card layout for membership plans
+
+ Added "Most Popular" badge for standard plan
+
+ Implemented hover effects and animations
+
+ Added comparison table for feature comparison
+
+
+New Features:
+
+Plan Cards: Three-tier pricing with gradient headers
+
+Comparison Table: Clear feature comparison across plans
+
+FAQ Section: Interactive accordion for common questions
+
+Visual Hierarchy: Clear differentiation between plan levels
+
+
+ CSS Grid layout for responsive card design
+
+ JavaScript for interactive elements
+
+
+ Gallery Page (gallery.html)
+
+Major Improvements:
+
+ Implemented lightbox functionality for full-screen image viewing
+
+ Added image filtering by categories (Equipment, Training, Facilities, Classes)
+
+Created responsive grid layout with equal image sizing
+
+ Added hover overlays with image information
+
+ Contact Page (contact.html)
+
+Major Improvements:
+
+ Complete redesign with modern layout
+
+ Split layout with contact info and form side-by-side
+
+Enhanced form validation with real-time feedback
+
+ Added operating hours section
+
+ Improved map integration
+
+ Added social media contact options
+
+New Features:
+Contact Information: Icon-based layout with clear hierarchy
+
+Enhanced Form: Additional fields (phone, subject dropdown)
+
+Social Contact: Large social media links with icons
+
+Success Messages: Form submission feedback
+
+
+ About Page (about.html)
+
+Major Improvements:
+
+ Proper image alignment in team member cards
+
+ Added values section with icon grid
+
+ Enhanced mission and vision layout
+
+ Implemented statistics counter animation
+
+ Added team member social links
+
+
+ Blog Page (blog.html)
+
+Major Improvements:
+
+ Complete redesign with magazine-style layout
+
+ Added sidebar with categories, recent posts, and newsletter
+
+ Implemented card-based article design
+
+Added pagination and navigation
+
+ Enhanced typography and spacing
+
+
+
   Latest Update 
     Added css for decoration, layout, and typography
 
